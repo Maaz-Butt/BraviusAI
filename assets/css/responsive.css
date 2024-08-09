@@ -1,0 +1,783 @@
+/* ===== 02. Global Style ===== */
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 71px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 66px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46px;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 35px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .h6-color {
+    padding-bottom: 15px;
+  }
+
+  .hover1 {
+    padding: 8px 30px;
+  }
+
+  .hover2 {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 35px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .hover1 {
+    padding: 7px 25px;
+  }
+
+  .hover2 {
+    padding: 7px 25px;
+  }
+}
+
+/* ===== End of 02. Global Style ===== */
+/* ========= 1.1. header section ========= */
+@media screen and (min-width: 991px) {
+  .navbar-expand-lg .navbar-collapse {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .open-aside {
+    display: block;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .nav-logo img {
+    width: 178px;
+  }
+
+  .side-nav-logo {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-logo img {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo img {
+    width: 154px;
+  }
+
+  aside .fa-xmark {
+    font-size: 20px;
+  }
+
+  .open-aside {
+    padding: 8px 14px;
+    font-size: 22px;
+  }
+}
+
+/* ========= End of 1.1. header section ========= */
+
+/* ========= 1.2. Hero section ========= */
+@media screen and (max-width: 1199px) {
+  .Hero .content {
+    width: 45%;
+    gap: 5px;
+  }
+
+  .logo_slider div {
+    padding-left: 4px;
+  }
+
+  .logo_slider div img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero_bg {
+    background-position: 40% center;
+  }
+
+  .Hero .content {
+    width: 55%;
+  }
+
+  .Hero .content h1 {
+    line-height: 85px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero_bg {
+    background-position: center;
+  }
+
+  .Hero .content {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .Hero .content .d-flex {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero_bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+      url("../images/bg/hero-bg.png");
+  }
+}
+
+/* ========= End of 1.2. Hero section ========= */
+/* ========= 1.3. About section ========= */
+@media screen and (max-width: 1399px) {
+  .About .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .About .col-md-6:nth-child(2) img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .About .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .About .col-md-6:nth-child(2) img {
+    width: 100%;
+  }
+
+  .About .flex-column {
+    margin: 20px 0px 10px;
+  }
+
+  .About .content {
+    gap: 5px;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .About .row {
+    display: flex;
+    gap: 30px;
+  }
+
+  .About .content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ========= End of 1.3. About section ========= */
+/* ========= 1.4. Portfolio section ========= */
+@media screen and (max-width: 1199px) {
+  .Portfolio .col-md-6 .position-absolute {
+    padding: 30px 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Portfolio .col-md-3 .position-absolute {
+    padding: 10px;
+  }
+
+  .Portfolio .d-flex {
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Portfolio .row .col-md-3,
+  .Portfolio .row .col-md-6 {
+    padding: 5px;
+  }
+
+  .Portfolio .row .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Portfolio .col-md-6 .position-absolute {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Portfolio .d-flex {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 0px;
+  }
+
+  .Portfolio .d-flex img {
+    width: 60%;
+  }
+
+  .Portfolio .d-flex img:nth-child(3) {
+    width: 50%;
+  }
+
+  .Portfolio .d-flex .diamond {
+    width: 6%;
+  }
+}
+
+/* ========= End of 1.4. Portfolio section ========= */
+/* ========= 1.5. Services section ========= */
+@media screen and (max-width: 767px) {
+  .Services .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ========= End of 1.5. Services section ========= */
+/* ========= 1.6. Why section ========= */
+@media screen and (max-width: 1399px) {
+  .Why .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .Why .col-md-6:nth-child(2) img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Why .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .Why .col-md-6:nth-child(2) img {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .Why .flex-column {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .Why .flex-column .d-flex img {
+    width: 120px;
+  }
+
+  .Why .content {
+    gap: 5px;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Why .flex-column .d-flex img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Why .row {
+    display: flex;
+    gap: 30px;
+  }
+
+  .Why .flex-column {
+    text-align: start;
+  }
+
+  .Why .col-md-6:nth-child(2) img {
+    margin-right: 0px;
+  }
+
+  .Why .content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ========= End of 1.6. Why section ========= */
+/* ========= 1.7. Pricing section ========= */
+@media screen and (max-width: 991px) {
+  .Pricing .flex-column .price {
+    margin: 10px 0px;
+  }
+
+  .Pricing .flex-column {
+    padding: 30px 15px;
+  }
+
+  .Pricing .flex-column .price p {
+    padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Pricing .row {
+    gap: 30px;
+  }
+
+  .Pricing .flex-column {
+    padding: 40px 40px;
+  }
+
+  .Pricing .flex-column .price p {
+    padding-top: 3px;
+  }
+}
+
+/* ========= End of 1.7. Pricing section ========= */
+/* ========= 1.8. Testimonials section ========= */
+@media screen and (max-width: 1399px) {
+  .Testimonials .content {
+    padding: 20px 0px 20px 20px;
+  }
+
+  .Testimonials .users .user {
+    width: 90%;
+  }
+
+  .Testimonials .users {
+    padding: 0px 0px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Testimonials .content {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .Testimonials .users .user {
+    width: 100%;
+  }
+
+  .Testimonials .users .user:nth-child(2) {
+    margin-left: 26px;
+  }
+
+  .Testimonials .users {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .Testimonials .content .buttons {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Testimonials .users .user:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .Testimonials .content .d-flex {
+    margin: 15px 0px;
+  }
+
+  .Testimonials .content .buttons {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Testimonials .row {
+    display: flex;
+    gap: 30px;
+  }
+
+  .Testimonials .users {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .Testimonials .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .Testimonials .content .d-flex div {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Testimonials .users .user {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* ========= End of 1.8. Testimonials section ========= */
+/* ========= 1.9. Hub section ========= */
+@media screen and (max-width: 1199px) {
+  .Hub .container {
+    padding: 50px;
+  }
+
+  .Hub .container .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hub .container .content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hub .d-flex img {
+    width: 20%;
+  }
+}
+
+/* ========= End of 1.9. Hub section ========= */
+/* ========= 1.10. FAQ's section ========= */
+@media screen and (max-width: 1399px) {
+  .Faq .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .Faq .col-md-6:nth-child(2) img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Faq .content {
+    gap: 10px;
+    padding: 20px 0px;
+  }
+
+  .Faq .col-md-6:nth-child(2) img {
+    width: 100%;
+  }
+
+  .Faq .flex-column {
+    margin: 20px 0px 10px;
+  }
+
+  .Faq .content {
+    gap: 5px;
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Faq .accordion {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Faq .row {
+    display: flex;
+    gap: 30px;
+  }
+
+  .Faq .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .Faq .accordion {
+    width: 100%;
+    margin: 35px 0px 0px;
+  }
+}
+
+/* ========= End of 1.10. FAQ's section ========= */
+/* ========= 1.11. Blogs section ========= */
+@media screen and (max-width: 991px) {
+  .Blogs {
+    padding: 10px 0px 50px;
+  }
+
+  .Blogs .col-md-4 .position-absolute {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Blogs .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ========= End of 1.11. Blogs section ========= */
+/* ========= 1.12. Footer section ========= */
+@media screen and (max-width: 1199px) {
+  .Footer .col-md-4 img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Footer .col-md-4 {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Footer .col-md-4 {
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Footer .col-md-4 img {
+    width: 40%;
+  }
+
+  .Footer .col-md-4 .gap-3 {
+    margin-bottom: 20px;
+  }
+
+  .Footer .col-md-8 {
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .Footer .col-md-8 .col-md-6 {
+    margin-bottom: 20px;
+  }
+
+  .Footer .col-md-8 .d-flex {
+    flex-direction: column;
+  }
+
+  .Footer .col-md-8 .d-flex input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Footer .col-md-8 .d-flex .cyan-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Footer .col-md-8 .d-flex .cyan-btn a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========= End of 1.12. Footer section ========= */
+/* ========= 10.1. Coming-soon section ========= */
+@media screen and (max-width: 1599px) {
+  .Coming-soon .content {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .Coming-soon .content {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Coming-soon .content {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Coming-soon .content {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Coming-soon #countdown {
+    flex-wrap: wrap;
+    padding: 0px 0px 80px;
+    justify-content: center;
+  }
+  .Coming-soon .content h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .Coming-soon .content .cyan-btn {
+    margin: 40px 0px;
+  }
+  .Coming-soon .time-box {
+    height: 109px;
+    width: 111px;
+  }
+}
+/* ========= End of 10.1. Coming-soon section ========= */
+/* ========= 11.1. Error section ========= */
+@media screen and (max-width: 1599px) {
+  .Error .content {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .Error .content {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Error .content {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Error .content {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Error .content .err {
+    font-size: 150px;
+  }
+  .Error .content .err img {
+    width: 130px;
+  }
+}
+
+/* ========= End of 11.1. Error section ========= */

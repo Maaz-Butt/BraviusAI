@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraviusAI</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/fav_icon.svg" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="hero_bg">
+            <!-- ======== 1.1. Header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0 " href="index.html">
+                            <figure><img src="assets/images/logo.svg" alt="logo"></figure>
+                        </a>
+                        <!-- navigation button  -->
+                        <button class="open-aside" onclick="open_aside()" type="button">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Blog</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link d-flex gap-2" href="#">Pages <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                        <li><a class="dropdown-item" href="our_Blog.html">Our Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog_Detail.html">Blog Detail</a></li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404</a></li>
+                                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <hr>
+                            <i onclick="open_update()" class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+                <!--===== aside navigation slidebar =====-->
+
+                <aside>
+                    <div id="mySidenav" class="right-sidbar">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/logo_aside.svg"
+                                        alt="img" class=""></a></figure>
+                            <button class="fa-solid fa-xmark" onclick="close_aside()"> </button>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                                    <button class="a-slid page-btn">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-2"></i>
+                                </div>
+                                <ul id="slid-drop">
+                                    <li><a href="blog_Detail.html">Blog Detail</a></li>
+                                    <li><a href="our_Blog.html">Our Blog</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="faq.html">FAQs</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <aside>
+                    <div id="myUpdatenav" class="update-sidbar">
+                        <div class="side-nav-logo d-flex justify-content-end align-items-center ps-2 pe-1 nav-logo">
+                            <button class="fa-solid fa-xmark" onclick="close_update()"></button>
+                        </div>
+                        <div class="content">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/logo_aside.svg"
+                                        alt="img" class=""></a></figure>
+                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <h6>120 West Lancashire, England </h6>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <h6>support@username.com</h6>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <h6>(+122) 34 5678 9100</h6>
+                                </li>
+                            </ul>
+                            <h5 class="mt-3">Get News & Updates</h5>
+                            <div class="d-flex">
+                                <input type="email" placeholder="Your email...">
+                                <a href="#">
+                                    <div class="circle-btn">
+                                        <h6>Subscribe</h6>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="icons">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </header>
+            <!-- ======== End of 1.1. Header section ========  -->
+            <!-- ======== 1.2. Hero section ========  -->
+            <section class="Hero">
+                <div class="container">
+                    <div class="content">
+                        <h1>Empowering <span><img src="assets/images/index/hero-span.png" alt="AI"></span> the Future
+                            with AI</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris.</p>
+                        <div class="d-flex">
+                            <div class="cyan-btn">
+                                <a href="#">Explore More</a>
+                            </div>
+                            <div>
+                                <h3><span class="count">300</span>+</h3>
+                                <p>Trusted Companies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </section>
+    <!-- ======== Logo_slide section ========  -->
+    <div class="container">
+        <div class="logo_slider">
+            <div>
+                <img src="assets/images/icons/logoipsum1.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum2.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum3.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum4.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum5.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum6.svg" alt="Logo">
+            </div>
+            <div>
+                <img src="assets/images/icons/logoipsum7.svg" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <hr class="hero-hr">
+    <!-- ======== End of Logo_slide section ========  -->
+    <!-- ======== End of 1.2. Hero section ========  -->
+    <!-- ======== 1.3. About section ========  -->
+    <section class="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="content">
+                        <h6><i class="fa-solid fa-diamond"></i> ABOUT US</h6>
+                        <h2>Transform Your Business With AI Technology</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-between">
+                                <p>Artificial Intelligence</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Client Service</p>
+                                <p>71%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Quality</p>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                        <div class="cyan-btn">
+                            <a href="#">More About</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="assets/images/index/robot.png" alt="robot">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.3. About section ========  -->
+    <!-- ======== 1.4. Portfolio section ========  -->
+    <section class="Portfolio">
+        <h6><i class="fa-solid fa-diamond"></i> OUR PORTFOLIO</h6>
+        <h2>Take A Look At Our Completed Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="position-relative">
+                        <img src="assets/images/index/portfolio.png" alt="Learning">
+                        <div class="position-absolute">
+                            <h4>AI Machine Learning</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="position-relative">
+                        <img src="assets/images/index/portfolio2.png" alt="Learning">
+                        <div class="position-absolute">
+                            <h4>Advanced Programming</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img src="assets/images/index/portfolio4.png" alt="Learning">
+                        <div class="position-absolute">
+                            <h4>Smart House Technology</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="position-relative">
+                        <img src="assets/images/index/portfolio3.png" alt="Learning">
+                        <div class="position-absolute">
+                            <h4>Artificial Intelligence Dev</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <img src="assets/images/index/portfolio5.png" alt="Learning">
+                        <div class="position-absolute">
+                            <h4>AI Machine Learning</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="logo_slider">
+                    <div>
+                        <img src="assets/images/icons/SkilledExperts.svg" alt="Logo">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Diamond.svg" alt="Diamond" class="diamond">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Creativity.svg" alt="Logo" class="creativity">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Diamond.svg" alt="Diamond" class="diamond">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/MagicalWorld.svg" alt="Logo">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Diamond.svg" alt="Diamond" class="diamond">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Creativity.svg" alt="Logo" class="creativity">
+                    </div>
+                    <div>
+                        <img src="assets/images/icons/Diamond.svg" alt="Diamond" class="diamond">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.4. Portfolio section ========  -->
+    <div class="gray_bg">
+        <!-- ======== 1.5. Services section ========  -->
+        <section class="Services">
+            <h6><i class="fa-solid fa-diamond"></i> OUR SERVICES</h6>
+            <h2>Explore Best AI Services</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="assets/images/index/service1.png" alt="Serivce">
+                            <div class="position-absolute">
+                                <h4>Robotic Automation</h4>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                    incididunt labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="assets/images/index/service2.png" alt="Serivce">
+                            <div class="position-absolute">
+                                <h4>AI For Conversation</h4>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                    incididunt labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="assets/images/index/service3.png" alt="Serivce">
+                            <div class="position-absolute">
+                                <h4>Machine Learning</h4>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                    incididunt labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="assets/images/index/service4.png" alt="Serivce">
+                            <div class="position-absolute">
+                                <h4>Cyber Security</h4>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor
+                                    incididunt labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cyan-btn">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.5. Services section ========  -->
+        <!-- ======== 1.6. Why section ========  -->
+        <section class="Why">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="content">
+                            <h6><i class="fa-solid fa-diamond"></i> WHY US</h6>
+                            <h3>Innovate, Ignite, Invent: Your AI Business Companion</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                sint voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex">
+                                    <img src="assets/images/icons/smart.svg" alt="smart">
+                                    <div>
+                                        <h5>Smart Solution</h5>
+                                        <p>Lorem ipsum dolor sit amet, dui consectetur adipiscing elit, sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="assets/images/icons/better.svg" alt="smart">
+                                    <div>
+                                        <h5>Better Reliability</h5>
+                                        <p>Lorem ipsum dolor sit amet, dui consectetur adipiscing elit, sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="assets/images/icons/easy.svg" alt="smart">
+                                    <div>
+                                        <h5>Easy Integration</h5>
+                                        <p>Lorem ipsum dolor sit amet, dui consectetur adipiscing elit, sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cyan-btn">
+                                <a href="#">More About</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="assets/images/index/why.png" alt="robot">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.6. Why section ========  -->
+        <!-- ======== 1.7. Pricing section ========  -->
+        <section class="Pricing">
+            <h6><i class="fa-solid fa-diamond"></i> PRICING PLANS</h6>
+            <h2>Flexible Pricing Plans for AI</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column">
+                            <h3>Free</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                            <div class="price">
+                                <h2>$0</h2>
+                                <p>/month</p>
+                            </div>
+                            <hr>
+                            <ul>
+                                <li><i class="fa-solid fa-diamond"></i> Requirement Analysis</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Strategy Development</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Solution Design</li>
+                                <li class="disable"><i class="fa-solid fa-diamond"></i> Data Preparation</li>
+                                <li class="disable"><i class="fa-solid fa-diamond"></i> Performance Evaluation</li>
+                            </ul>
+                            <div class="cyan-btn">
+                                <a href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column">
+                            <h3>Standard</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                            <div class="price">
+                                <h2>$29</h2>
+                                <p>/month</p>
+                            </div>
+                            <hr>
+                            <ul>
+                                <li><i class="fa-solid fa-diamond"></i> Requirement Analysis</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Strategy Development</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Solution Design</li>
+                                <li><i class="fa-solid fa-diamond"></i> Data Preparation</li>
+                                <li class="disable"><i class="fa-solid fa-diamond"></i> Performance Evaluation</li>
+                            </ul>
+                            <div class="cyan-btn">
+                                <a href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column">
+                            <h3>Advanced</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                            <div class="price">
+                                <h2>$59</h2>
+                                <p>/month</p>
+                            </div>
+                            <hr>
+                            <ul>
+                                <li><i class="fa-solid fa-diamond"></i> Requirement Analysis</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Strategy Development</li>
+                                <li><i class="fa-solid fa-diamond"></i> AI Solution Design</li>
+                                <li><i class="fa-solid fa-diamond"></i> Data Preparation</li>
+                                <li><i class="fa-solid fa-diamond"></i> Performance Evaluation</li>
+                            </ul>
+                            <div class="cyan-btn">
+                                <a href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.7. Pricing section ========  -->
+    </div>
+    <!-- ======== 1.8. Testimonials section ========  -->
+    <section class="Testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <div class="content">
+                        <h6><i class="fa-solid fa-diamond"></i> TESTIMONIALS</h6>
+                        <h3>What People Say</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui et blanditiis praesentium sint
+                            voluptatum deleniti atque corrupti.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="assets/images/icons/testimonials.svg" alt="Experience">
+                                <h2><span class="counter" data-target="15">0</span>+</h2>
+                                <p>Years Of Experience</p>
+                            </div>
+                            <hr>
+                            <div>
+                                <img src="assets/images/icons/testimonials2.svg" alt="World">
+                                <h2><span class="counter" data-target="150">0</span>k+</h2>
+                                <p>Worldwide User</p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="cyan-btn">
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="assets/images/icons/playicon.svg" alt="play">
+                                </a>
+                                <p>Watch Intro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <div class="users">
+                        <div class="user">
+                            <img src="assets/images/index/testi2.png" alt="User">
+                            <div class="d-flex flex-column gap-1">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod
+                                    tempor.”
+                                </p>
+                                <p>Harper Russo / Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="assets/images/index/testi2.png" alt="User">
+                            <div class="d-flex flex-column gap-1">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod
+                                    tempor.”
+                                </p>
+                                <p>Harper Russo / Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="assets/images/index/testi2.png" alt="User">
+                            <div class="d-flex flex-column gap-1">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod
+                                    tempor.”
+                                </p>
+                                <p>Harper Russo / Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.8. Testimonials section ========  -->
+    <!-- ======== 1.9. Hub section ========  -->
+    <section class="Hub">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="content">
+                        <h6><i class="fa-solid fa-diamond"></i> AI KNOWLEDGE HUB</h6>
+                        <h2>Unlock The Potential Of AI And Robotics</h2>
+                        <div class="cyan-btn">
+                            <a href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <a href="#">
+                        <img src="assets/images/icons/white-play.svg" alt="play">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== End of 1.9. Hub section ========  -->
+    <div class="gray_bg">
+        <!-- ======== 1.10. FAQ's section ========  -->
+        <section class="Faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="content">
+                            <h6><i class="fa-solid fa-diamond"></i> FAQ's</h6>
+                            <h2>Frequently Asked Questions</h2>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            What is AI and how does it relate to robotics?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            How does AI improve workplace safety?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            How does AI and robotics impact the job market?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            What is the future of AI and robotics in industry?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            What projects has your company worked on?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                            tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="assets/images/index/faq.png" alt="robot">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.10. FAQ's section ========  -->
+        <!-- ======== 1.11. Blogs section ========  -->
+        <section class="Blogs">
+            <h6><i class="fa-solid fa-diamond"></i> OUR BLOGS</h6>
+            <h2>Latest News & Articles</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="position-relative">
+                            <img src="assets/images/index/blog1.png" alt="Blogs">
+                            <div class="position-absolute">
+                                <p class="date"><i class="fa-solid fa-diamond"></i> April 25, 2024</p>
+                                <h5>Transforming Industries And Changing Lives With AI</h5>
+                                <a class="d-flex align-items-center" href="#">
+                                    <p>Read More </p> <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="position-relative">
+                            <img src="assets/images/index/blog2.png" alt="Blogs">
+                            <div class="position-absolute">
+                                <p class="date"><i class="fa-solid fa-diamond"></i> April 25, 2024</p>
+                                <h5>How AI Is Changing The Face Of Digital Marketing</h5>
+                                <a class="d-flex align-items-center" href="#">
+                                    <p>Read More </p> <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="position-relative">
+                            <img src="assets/images/index/blog3.png" alt="Blogs">
+                            <div class="position-absolute">
+                                <p class="date"><i class="fa-solid fa-diamond"></i> April 25, 2024</p>
+                                <h5>Exploring The Ethics Of AI And Robotics In Society</h5>
+                                <a class="d-flex align-items-center" href="#">
+                                    <p>Read More </p> <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======== End of 1.11. Blogs section ========  -->
+    </div>
+    <!-- ======== 1.12. Footer section ========  -->
+    <footer class="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/logo.svg" alt="logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.</p>
+                    <h5 class="mt-4">Social Media</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h6>Subscribe To Newsletter</h6>
+                    <div class="d-flex align-items-center justify-content-start gap-3 w-100 mt-1">
+                        <input type="email" placeholder="Your email address...">
+                        <div class="cyan-btn">
+                            <a href="#">Subscribe</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row w-100">
+                        <div class="col-md-6">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>120 West Lancashire, England </p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <p>support@username.com</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <p>(+122) 34 5678 9100</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Pages</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Help</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Customer Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <p>Copyright 2024 BraviusAI, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- ======== End of 1.12. Footer section ========  -->
+
+
+
+    <!-- bootstrap min javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j Query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
